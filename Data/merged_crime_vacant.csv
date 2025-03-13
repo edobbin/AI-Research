@@ -1,0 +1,199 @@
+,Neighborhood,Crime_Count,Vacant_Property_Count
+0,Abell,26,11
+1,Allendale,39,82
+2,Arcadia,26,8
+3,Arlington,107,109
+4,Ashburton,7,11
+5,Baltimore Highlands,125,38
+6,Barclay,76,50
+7,Bayview,18,6
+8,Beechfield,19,7
+9,Belair-Edison,198,105
+10,Belair-Parkside,19,2
+11,Belvedere,3,1
+12,Berea,83,146
+13,Better Waverly,38,52
+14,Beverly Hills,1,2
+15,Biddle Street,44,91
+16,Bolton Hill,7,4
+17,Boyd-Booth,69,137
+18,Brewers Hill,6,3
+19,Bridgeview/Greenlawn,24,24
+20,Broadway East,239,805
+21,Broening Manor,35,4
+22,Brooklyn,248,190
+23,Callaway-Garrison,7,17
+24,Cameron Village,3,4
+25,Canton,22,32
+26,Carroll - Camden Industrial Area,12,2
+27,Carroll-South Hilton,31,64
+28,Carrollton Ridge,327,789
+29,Cedarcroft,1,1
+30,Cedmont,10,3
+31,Cedonia,21,5
+32,Central Forest Park,18,12
+33,Central Park Heights,270,368
+34,Charles North,67,13
+35,Charles Village,4,7
+36,Cherry Hill,80,57
+37,Clifton Park,54,2
+38,Coldspring,2,1
+39,Coldstream Homestead Montebello,128,302
+40,Coppin Heights/Ash-Co-East,47,189
+41,Cross Country,1,1
+42,Curtis Bay,109,137
+43,Cylburn,15,13
+44,Darley Park,22,112
+45,Dolfield,28,19
+46,Dorchester,28,28
+47,Downtown,442,57
+48,Druid Heights,129,159
+49,Dunbar-Broadway,65,1
+50,East Arlington,6,1
+51,East Baltimore Midway,150,378
+52,Easterwood,38,174
+53,Edgewood,26,54
+54,Edmondson Village,32,25
+55,Ednor Gardens-Lakeside,16,7
+56,Ellwood Park/Monument,94,114
+57,Evergreen,2,1
+58,Evergreen Lawn,4,13
+59,Fairfield Area,13,5
+60,Federal Hill,7,3
+61,Fells Point,8,10
+62,Forest Park,22,23
+63,Four By Four,14,46
+64,Frankford,120,24
+65,Franklin Square,103,272
+66,Franklintown,13,7
+67,Franklintown Road,60,155
+68,Garwyn Oaks,8,11
+69,Gay Street,35,28
+70,Glen,16,9
+71,Glen Oaks,14,5
+72,Graceland Park,52,11
+73,Greektown,3,12
+74,Greenmount West,18,9
+75,Greenspring,14,143
+76,Grove Park,6,5
+77,Guilford,2,3
+78,Gwynns Falls,8,38
+79,Hamilton Hills,73,8
+80,Hampden,18,30
+81,Hanlon-Longwood,13,32
+82,Harlem Park,122,505
+83,Harwood,33,25
+84,Highlandtown,27,16
+85,Hillen,18,10
+86,Hollins Market,74,66
+87,Homeland,17,1
+88,Howard Park,36,27
+89,Hunting Ridge,20,3
+90,Idlewood,1,6
+91,Irvington,21,42
+92,Johnston Square,64,123
+93,Jones Falls Area,2,1
+94,Jonestown,8,15
+95,Kenilworth Park,2,4
+96,Kernewood,8,7
+97,Kresson,24,11
+98,Lake Walker,1,2
+99,Lakeland,19,21
+100,Langston Hughes,22,53
+101,Lauraville,24,12
+102,Levindale,3,1
+103,Liberty Square,23,9
+104,Little Italy,2,7
+105,Loch Raven,30,8
+106,Locust Point,7,2
+107,Lucille Park,29,37
+108,Madison Park,33,22
+109,Madison-Eastend,70,78
+110,Medfield,7,1
+111,Medford,16,2
+112,Mid-Govans,11,12
+113,Mid-Town Belvedere,8,6
+114,Middle East,32,59
+115,Midtown-Edmondson,59,356
+116,Millhill,79,153
+117,Milton-Montford,117,71
+118,Mondawmin,80,307
+119,Moravia-Walther,4,2
+120,Morrell Park,36,50
+121,Mosher,39,187
+122,Mount Holly,35,30
+123,Mount Vernon,25,5
+124,Mount Washington,5,8
+125,New Northwood,24,6
+126,North Harford Road,18,16
+127,Northwest Community Action,60,162
+128,Oakenshawe,5,4
+129,Old Goucher,10,3
+130,Oldtown,46,34
+131,Oliver,124,381
+132,Orangeville,10,4
+133,Orangeville Industrial Area,5,1
+134,Panway/Braddish Avenue,4,14
+135,Park Circle,74,169
+136,Parklane,20,19
+137,Parkside,16,1
+138,Patterson Park Neighborhood,52,42
+139,Patterson Place,10,7
+140,Pen Lucy,37,26
+141,Penn North,332,285
+142,Penn-Fallsway,13,1
+143,Penrose/Fayette Street Outreach,112,347
+144,Perring Loch,6,1
+145,Pimlico Good Neighbors,16,17
+146,Pleasant View Gardens,5,2
+147,Poppleton,87,52
+148,Pulaski Industrial Area,34,3
+149,Radnor-Winston,4,2
+150,Ramblewood,4,3
+151,Reisterstown Station,17,2
+152,Remington,9,7
+153,Reservoir Hill,68,55
+154,Richnor Springs,1,4
+155,Riverside,4,2
+156,Rognel Heights,32,10
+157,Roland Park,6,2
+158,Rosebank,3,2
+159,Rosemont,32,134
+160,Rosemont East,10,4
+161,Rosemont Homeowners/Tenants,18,87
+162,Saint Agnes,2,1
+163,Saint Helena,1,3
+164,Saint Josephs,24,74
+165,Sandtown-Winchester,398,668
+166,Seton Hill,18,3
+167,Sharp-Leadenhall,15,2
+168,Shipley Hill,116,291
+169,South Baltimore,16,5
+170,South Clifton Park,40,85
+171,Stonewood-Pentwood-Winston,9,1
+172,Ten Hills,7,2
+173,Towanda-Grantley,46,69
+174,Tremont,3,1
+175,Union Square,61,89
+176,Uplands,4,3
+177,Upper Fells Point,11,15
+178,Upton,366,287
+179,Violetville,7,2
+180,Walbrook,84,113
+181,Waltherson,35,22
+182,Washington Hill,23,15
+183,Washington Village/Pigtown,113,120
+184,Waverly,23,26
+185,West Arlington,16,13
+186,West Forest Park,5,16
+187,West Hills,3,1
+188,Westfield,16,3
+189,Westgate,4,4
+190,Westport,55,129
+191,Wilson Park,4,28
+192,Winchester,34,91
+193,Windsor Hills,4,15
+194,Winston-Govans,5,14
+195,Woodberry,2,4
+196,Woodmere,84,28
+197,Yale Heights,9,4
