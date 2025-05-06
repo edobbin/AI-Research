@@ -1,0 +1,5 @@
+#1 Install Dependencies
+Run this command in your terminal
+pip install -r requirements.txt
+
+run the code for the py/ipynb files

@@ -8,13 +8,13 @@ import geopandas as gpd
 from shapely.geometry import Point
 from scipy.stats import pearsonr
 
-crime_file_path = 'Data/Part1Crime.csv'
-homeless_shelter_path = 'Data/homelessShelter_cleaned_data.csv'
-vacant_housing_path = 'Data/vacantBuildingNoticesDataCleaned.csv'
+crime_file_path = 'Data/Cleaned_crime_report.csv'
+#homeless_shelter_path = 'Data/homelessShelter_cleaned_data.csv' Ignore For now
+vacant_housing_path = 'Data/cleanedvacant2.csv'
 
 crime_df = pd.read_csv(crime_file_path)
 vacant_df = pd.read_csv(vacant_housing_path)
-shelter_df = pd.read_csv(homeless_shelter_path)
+#shelter_df = pd.read_csv(homeless_shelter_path) Ignore For now
 
 #Nieghborhoods with the most vacant houses
 vacant_value_count = vacant_df['Neighborhood'].value_counts()
