@@ -1,9 +1,9 @@
 import Image from "next/image";
-import {Typography,Button, Container} from "@mui/material";
+import {Typography,Button, Box} from "@mui/material";
 import { Geist, Geist_Mono } from "next/font/google";
 import TypewriterComponent from "typewriter-effect";
-import { useEffect, useState } from "react";
-
+import {useState } from "react";
+import {motion} from "framer-motion"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,15 +14,26 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+const prop1 = {
+  hidden:{opacity:1},
+  show:{
+    opacity: .5,
+    transition:{
+      staggeredChildren: 0.25,
+    },
+  }
+};
 const titles = ['Title','Introduction','Factor(s) Observed','Demographics','Linear Regression Model','Integration with Neural Network','Adjustments', 'Results'];
 
 export default function Home() {
+
   const [titlePage,setTitle] = useState(0);
-  const [loop,setLoop] = useState(false);
+
 
   return (
-    <div
+    <motion.div
+      variants={prop1}
+      initial="hidden"
       className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`} style={{background:"transparent"}}
    >
         <video
@@ -50,13 +61,14 @@ export default function Home() {
           position: "sticky",
           fontSize: "5vw",
           transform: "scale(1)",
-          top:"120px"
+          top:"40px",
+          marginBottom:"0px"
           }}>
             
-            <TypewriterComponent
+            {titlePage == 0 &&<TypewriterComponent
               options={{
               autoStart: true,
-              loop: loop,
+              loop: false,
               cursor: "_",
             }}
             onInit={(typewriter) => {
@@ -67,10 +79,10 @@ export default function Home() {
                 })
                 .start();
             }}
-          />
-
+          />}
         
       </main>
+      
 
       <div
           style={{
@@ -81,6 +93,8 @@ export default function Home() {
             justifyContent: "center",
             alignItems: "center",
             position: "relative",
+            marginBottom:"0px",
+            marginTop:"0px",
             top:"-150px"            
           }}
         >
@@ -104,6 +118,13 @@ export default function Home() {
         
 
         </div>
+
+
+
+        {titlePage == 0 &&<Box sx={{marginTop:"0px",marginBottom:"0px", width:"30vw",height:"44vh",background:"transparent", justifyItems:"flex-end", position:"relative",top:"-150px", backgroundImage:'url("/videos/logo.png")'}}>
+
+      </Box>}
+      
       <div
           style={{
             width: "50vw",
@@ -115,9 +136,9 @@ export default function Home() {
             position: "sticky",
           }}
         >
-          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage - 1) % titles.length)
+          <Button sx={{width:"10vw",height:"7vh",background:"transparent", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage - 1) % titles.length)
           }}          >Prev</Button>
-          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage + 1) % titles.length)}}>Next</Button>
+          <Button sx={{width:"10vw",height:"7vh",background:"transparent", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage + 1) % titles.length)}}>Next</Button>
 
       </div>
 
@@ -171,6 +192,6 @@ export default function Home() {
           LinkedIn
         </a>
       </footer>
-    </div>
+    </motion.div>
   );
 }
