@@ -18,16 +18,18 @@ const geistMono = Geist_Mono({
 const titles = ['Title','Introduction','Factor(s) Observed','Demographics','Linear Regression Model','Integration with Neural Network','Adjustments', 'Results'];
 
 export default function Home() {
-  const [title,setTitle] = useState(0);
+  const [titlePage,setTitle] = useState(0);
+  const [loop,setLoop] = useState(false);
+
   return (
     <div
       className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`} style={{background:"transparent"}}
    >
         <video
-        autoPlay
-        loop
-        muted
-        playsInline
+          autoPlay
+          loop
+          muted
+          playsInline
         style={{
           position: 'absolute',
           top: 0,
@@ -54,7 +56,7 @@ export default function Home() {
             <TypewriterComponent
               options={{
               autoStart: true,
-              loop: false,
+              loop: loop,
               cursor: "_",
             }}
             onInit={(typewriter) => {
@@ -66,6 +68,8 @@ export default function Home() {
                 .start();
             }}
           />
+
+        
       </main>
 
       <div
@@ -80,7 +84,8 @@ export default function Home() {
             top:"-150px"            
           }}
         >
-            <TypewriterComponent sx={{fontFamily:"Space Grotesk",
+           
+           {titlePage == 0 &&<TypewriterComponent sx={{fontFamily:"Space Grotesk",
             position:"sticky",
             scale:"auto",
             fontSize:'clamp(2.5rem, 3vw, 4.5rem)',
@@ -94,7 +99,9 @@ export default function Home() {
                 })
                 .start();
                 
-            }}/>
+            }}/>}
+
+        
 
         </div>
       <div
@@ -108,8 +115,9 @@ export default function Home() {
             position: "sticky",
           }}
         >
-          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}}>Prev</Button>
-          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}}>Next</Button>
+          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage - 1) % titles.length)
+          }}          >Prev</Button>
+          <Button sx={{width:"10vw",height:"7vh",background:"gray", border:"3px solid black", fontFamily:"Space Grotesk", color:"black",fontSize:"medium"}} onClick={() => {setTitle((titlePage + 1) % titles.length)}}>Next</Button>
 
       </div>
 
